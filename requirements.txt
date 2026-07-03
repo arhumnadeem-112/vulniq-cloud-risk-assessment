@@ -1,0 +1,26 @@
+# CloudRisk Collection Scripts — Python Dependencies
+# Install: pip install -r requirements.txt
+
+# HTTP client
+httpx==0.27.0
+
+# HTML scraping
+beautifulsoup4==4.12.3
+lxml==5.2.2
+
+# Database — MySQL
+SQLAlchemy==2.0.30
+pymysql==1.1.1
+
+# Vector store
+chromadb==1.0.0
+
+# Utilities
+python-dateutil==2.9.0
+
+# NLP/Text Analysis
+sentence-transformers==2.7.0
+vaderSentiment==3.3.2
+
+# Schema validation (used by scoring.py OSPC validation)
+jsonschema==4.22.0

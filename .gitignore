@@ -1,0 +1,48 @@
+# Environment and secrets — never commit these
+.env
+*.env
+.env.*
+
+# OSPC config may contain org details
+data/config/ospc.json
+
+# Raw data outputs — too large for Git
+data/raw/
+data/etl/
+data/scores/
+data/reports/
+data/manifests/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# macOS system files
+.DS_Store
+
+# IDE files
+.vscode/
+.idea/
+
+# Jupyter notebooks checkpoints
+.ipynb_checkpoints/
+
+# Root-level scripts contain local credentials — never commit those copies
+# (The sanitised versions under scripts/ are tracked intentionally)
+/run_collectors.sh
+/run_api_collectors.sh
+/run_nlp_pipeline.sh
+/run_general_collector.sh
+/create_jobs.sh
+.claude/
